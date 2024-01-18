@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div id="box">
+        <div class="box-item" id="output">
+            <p id="out-box">P4$5W0rD!</p>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copy" width="44" height="44"
+                viewBox="0 0 24 24" stroke-width="1.5" stroke="#00b341" fill="none" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                    d="M7 7m0 2.667a2.667 2.667 0 0 1 2.667 -2.667h8.666a2.667 2.667 0 0 1 2.667 2.667v8.666a2.667 2.667 0 0 1 -2.667 2.667h-8.666a2.667 2.667 0 0 1 -2.667 -2.667z" />
+                <path
+                    d="M4.012 16.737a2.005 2.005 0 0 1 -1.012 -1.737v-10c0 -1.1 .9 -2 2 -2h10c.75 0 1.158 .385 1.5 1" />
+            </svg>
+        </div>
+
+        <div class="box-item" id="chl">
+            <p>Character Length</p>
+            <h1 id="charlen">8</h1>
+        </div>
+
+        <div class="slidecontainer">
+            <input type="range" min="4" max="16" value="8" class="slider" id="myRange">
+        </div>
+
+        <div class="check-container">
+            <div class="cb" style="margin-top: 20px;">
+                <input type="checkbox" id="IUL" name="IUL" checked />
+                <label for="IUL">Include Uppercase Letters</label>
+            </div>
+            <div class="cb">
+                <input type="checkbox" id="ILL" name="ILL" checked />
+                <label for="ILL">Include Lowercase Letters</label>
+            </div>
+            <div class="cb">
+                <input type="checkbox" id="IN" name="IN" checked />
+                <label for="IN">Include Numbers</label>
+            </div>
+            <div class="cb">
+                <input type="checkbox" id="IS" name="IS" checked />
+                <label for="IS">Include Symbols</label>
+            </div>
+        </div>
+
+        <div class="strength">
+            <div class="chead">
+                <p>STRENGTH</p>
+            </div>
+            <div class="s-bars">
+                <div class="bar b1"></div>
+                <div class="bar b2"></div>
+                <div class="bar b3"></div>
+                <div class="bar b4"></div>
+            </div>
+        </div>
+
+        <div id="gen">
+            <p>GENERATE ➜</p>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="./index.js" charset="UTF-8"></script>
+</body>
+
+</html>
